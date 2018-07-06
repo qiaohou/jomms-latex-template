@@ -1,0 +1,1251 @@
+\documentclass[11pt,reqno]{amsart}
+
+% Use if you need to include figures
+\usepackage{graphicx}  
+
+% \usepackage{mathtime}  % Comment this out if you don't have this package
+
+\textheight=51pc 
+\textwidth=38pc 
+
+\title[Short title of up to 45 letters]{Full title of paper}
+
+\author{Name of first author}
+\address{Affiliation of first author\\
+Full postal address\\
+Anytown, XX 12345\\
+Country}
+\email{Email of first author}
+\urladdr{(Optional) home page}
+
+\author{Name of second author}
+\address{Affiliation of second author\\
+Full postal address\\
+Anytown, XX 12345\\
+Country}
+\email{Email of second author}
+
+\keywords{Optional here; must be supplied on submission form}
+
+\thanks{This is an acknowledgement to a funding agency.
+  Acknowledgments to individuals are better in a section by themselves
+(see end of paper); this way an entry appears in the online index.}
+
+% Author definitions come here
+
+\def\thesubsection{\thesection\Alph{subsection}}
+\numberwithin{equation}{section}
+\def\theequation{\thesection\hbox{-}\arabic{equation}}
+
+\newtheorem{example}{Example}[section]  % examples numbered within sections
+\newtheorem{theorem}[example]{Theorem}  % theorems numbered with examples
+
+\begin{document} % must come before the abstract
+
+\begin{abstract}
+  A brief abstract of about 150 words or less must be included. The
+  abstract should be self-contained and not make any reference to the
+  bibliography.
+\end{abstract}
+
+\maketitle % must come after the abstract
+
+\section{Introduction}\label{intro}
+
+Also acceptable is an untitled introduction (omit section header)
+or an introduction without section number 
+(use \verb+\section*{Introduction}+).
+
+You should use symbolic labels for your cross references.  For
+example, at the beginning of this section we wrote
+\verb+\label{intro}+.  Later, when we want to refer to this section,
+we type $$\verb+Section~\ref{intro}+,$$ which appears as
+Section~\ref{intro}.
+
+The same thing can be done with examples, theorems and equations.
+
+\section{Some examples}\label{examples}
+
+In this section we look at the preferred numbering of subsections,
+theorems, examples and so on.  
+
+\begin{example}\rm
+\label{ex1}
+This is our first example.  Inside this example we have the equation
+\begin{equation}
+\label{einstein}
+e=mc^2.
+\end{equation}
+\end{example}
+
+This equation is numbered because it is important and will be referred
+to later; this is also done with \verb+\label+ and \verb+\ref+. 
+However, an equation that won't be referred to later
+doesn't need a number, even if it is displayed (within double dollar
+signs).  Too many numbered equations clutter the page for no good reason.
+
+\begin{theorem}[Pythagoras]
+\label{pyth}
+In a right triangle,
+the square on the hypotenuse equals the sum of the squares on the
+perpendicular sides.
+\end{theorem}
+
+\begin{example}\rm 
+This is our second example; it comes after
+Example~\ref{ex1} and Theorem~\ref{pyth}, so it gets a higher number
+than both.  We prefer to have examples, theorems and other
+important statements all in a single sequence; this helps the reader
+by providing plenty of guideposts.  (If Lemma 1 comes after Theorem
+2 and so on, the only way to find results is to look through the whole paper.)
+\end{example}
+
+\subsection{About subsections}
+
+We also like to identify subsections with a letter to distinguish
+their numbers from those of examples and theorems.
+
+\section{Lists and enumerations}
+
+Lists can be either numbered (enumerations) or unnumbered.
+The default numbering for top-level, second-level and third-levels
+lists is this:
+\begin{enumerate}
+\item an entry 
+\item another entry 
+\begin{enumerate}
+\item a subentry 
+\item another subentry 
+\begin{enumerate}
+\item a subsubentry 
+\item another subsubentry 
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+It there is good reason to change the numbering method, you can do so;
+consult any \LaTeX\ book.
+
+% ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf
+
+\section{Figures}
+
+\end{document}
+
+Pure titanium and titanium-based alloys exhibit excellent mechanical and
+biological properties, thus make titanium-based foams potential materials
+for load-bearing sandwich cores and orthopaedic implants
+\cite{Banhart, Spoerke, Wen2002a, Wen2002b}. In particular, as a potential implant
+material, stiffness of the porous material drops with the square of relative
+density to be comparable to bone stiffness and the open porosity allows
+complete bone ingrowth \cite{Gibson, Spoerke}. 
+These properties make porous titanium a promising solution to
+the inherited problems of the monolithic metallic implants such as the
+``stress shielding'' effect
+\cite{Chang, Dunand, Li2004, Spoerke, Wen2002a, Wen2002b}. 
+However, the porous microstructure of the foam leads to stress and
+strain concentrations near pores under load-bearing conditions, resulting in
+reduction of strength and ductility. Finite element (FE) simulation on a
+microstructural level is therefore needed to understand and predict the
+macroscopic and microscopic responses to better target and optimize the
+\end{enumerate}
+
+\end{document}
+
+Pure titanium and titanium-based alloys exhibit excellent mechanical and
+biological properties, thus make titanium-based foams potential materials
+for load-bearing sandwich cores and orthopaedic implants
+\cite{Banhart, Spoerke, Wen2002a, Wen2002b}. In particular, as a potential implant
+material, stiffness of the porous material drops with the square of relative
+density to be comparable to bone stiffness and the open porosity allows
+complete bone ingrowth \cite{Gibson, Spoerke}. 
+These properties make porous titanium a promising solution to
+the inherited problems of the monolithic metallic implants such as the
+``stress shielding'' effect
+\cite{Chang, Dunand, Li2004, Spoerke, Wen2002a, Wen2002b}. 
+However, the porous microstructure of the foam leads to stress and
+strain concentrations near pores under load-bearing conditions, resulting in
+reduction of strength and ductility. Finite element (FE) simulation on a
+microstructural level is therefore needed to understand and predict the
+macroscopic and microscopic responses to better target and optimize the
+application of these porous materials. 
+
+The titanium foam considered here was processed by a solid-state foaming
+technique in which individual high-pressure argon pores expand at elevated
+temperature and coalesce to form large pores \cite{Dunand, Murray}. 
+As porosity is less than 25{\%}, pores are mostly
+rounded, generally equiaxed, and un-merged, as illustrated in Figure~\ref{fig1}(a). 
+As the material is foamed to higher porosity, small pores coexist with large
+pores which have a complex, tortuous shape as shown in Figure~\ref{fig1}(b)
+\cite{Murray}. The microstructures are locally
+heterogeneous, although sufficiently large experimental samples behave
+homogeneously. Regarding such a heterogeneous material, a question of
+fundamental importance is raised, i.e., whether a FE model simulating a
+fragment of the heterogeneous microstructure is large enough to be a
+representative volume element (RVE) to describe the responses of the
+titanium foam. The determination of the size of RVE relies on basic
+definitions. 
+
+A few definitions of the minimum RVE have been developed for the study of
+heterogeneous materials. One definition was proposed by \cite{Hill},
+according to which the RVE was described as
+``\textit{a sample that (a) is structurally entirely typical of the whole mixture on average,
+and (b) contains a sufficient number of inclusions for the apparent overall moduli to be
+effectively independent of the surface values of traction and displacement, so long as
+these values are macroscopically uniform}'' \cite{Hill}. In this
+definition, (a) requires the RVE to statistically include all possible
+microstructural configurations and (b) demands the effective properties
+obtained from the RVE to be independent of the uniform displacement and
+traction boundary conditions (BCs). Regarding the (b) part in the
+definition, \cite{Huet} analytically proved that the effective elastic
+modulus obtained from a RVE is bounded by the average apparent responses of
+finite size domains under uniform displacement boundary condition (UDBC) and
+uniform traction boundary condition (UTBC) \cite{Huet}. This conclusion
+was extended to a nonlinear elastic heterogeneous material by \cite{Hazanov}
+and to elastoplastic materials under proportional loading by \cite{Jiang2001a, Hazanov, Jiang2001b}. 
+Following this line,
+homogenization convergence was shown by many researchers that as the domain
+size increases to the minimum RVE, the two bounds converge to the effective
+property \cite{Hollister, Huet, Jiang2001a, Ostoja-Starzewski, Pecullan, Terada}. 
+However, the convergence of the two bounds was found to be
+extremely slow for heterogeneous materials with soft inclusions in a hard
+matrix, and the higher the contrast between the moduli of matrix and
+inclusions, the slower the convergence \cite{Bouyge, Jiang2001a, Ostoja-Starzewski, Pecullan}. Given
+that zero modulus pores provide extreme moduli contrast to the titanium
+matrix for the titanium foam, the minimum RVE according to Hill's definition
+becomes prohibitively large to be used for the FE analyses, especially for
+three dimensional (3D) FE analyses due to the limitation of computational
+power. 
+
+Another more pragmatic definition of RVE was introduced by \cite{Drugan}:
+``\textit{the smallest material volume element of the composite for which the usual
+spatially constant `overall modulus' macroscopic constitutive representation is a sufficient
+accurate model to represent mean constitutive response}.'' \cite{Drugan}. 
+Base on this RVE concept, they
+analytically proved that it is possible to obtain relatively accurate
+estimations of elastic constants with small RVEs for a microstructure with
+non-overlapping spherical inclusions. In particular, the effective moduli
+obtained by a finite size domain at a length of only two sphere diameters
+can be close to those by an infinite length domain within a few percent of
+error even in case of void inclusions. This conclusion is contradictory to
+the results obtained according to Hill's definition. The BC applied on RVE
+is the key factor responsible for the difference. While the RVE should be
+independent of BCs according to Hill's definition, the right BC is needed
+for the RVE defined by Drugan and Willis. As pointed out by \cite{Jiang2001a},
+the derivation of Drugan and Willis for the minimum RVE implied the
+RVE should be associated with periodic BC and the microstructure is actually
+periodic \cite{Jiang2001a}. Jiang et al.\ verified the RVE theory of
+Drugan and Willis for unidirectional fiber--matrix composites with the
+modulus contrast of inclusion to matrix in a range of 0.001 to 1000
+\cite{Jiang2001a}. Gusev numerically verified that the average of
+elastic constants of many small RVEs is close to the result for large RVEs
+for 3D microstructures with randomly distributed non-overlapping spherical
+inclusions under periodic BC \cite{Gusev}. Their results also indicate
+that smaller analyzed windows lead to more scattered results. 
+
+Following the concept of the RVE defined by Drugan and Willis but accounting
+for the fluctuations of the apparent properties predicted by finite size
+domains, \cite{Kanit} recently proposed a more quantitative
+definition \cite{Kanit}. Based on their definition, the
+concept of one single minimum RVE should be abandoned and a sufficient
+number of small domain RVEs should be used to obtain the average linear
+properties. While UTBC and UDBC on small domains result in large, oppositely
+biased errors for the effective property, they found a periodic BC gives
+smaller error for the same window size. However, it should be noted that
+periodic BC requires the continuity of the inclusions on opposite boundaries
+to ensure the periodicity of the microstructure. Because such unnatural
+periodicity is seldom observed in real heterogeneous materials, periodic BCs
+are not appropriate for FE models developed by cutting out fragments of
+actual microstructures or simulated microstructures based on actual
+microstructures. 
+
+Other BCs might be considered as alternatives which maintain the philosophy
+of the RVE concept of Kanit et al.\ emphasizing the statistic average sense
+of the responses. \cite{HazanovandHuet}  proved analytically that the
+elasticity tensor predicted by a model smaller than Hill's RVE definition
+submitted to mixed BCs falls between the predictions associated with UTBC
+and UDBC \cite{HazanovandHuet}. They concluded that it is possible to
+get relatively accurate results by using small domains under mixed BCs. 
+Jiang et al.\ numerically verified this conclusion on unidirectional
+fiber-matrix composites \cite{Jiang2001a}. However, what kind of
+mixed BCs to be associated with RVEs to obtain accurate estimates for porous
+microstructure is still an open question. No satisfactory solution for
+practical RVEs which can be solved with reasonable computational power, to
+the best of our knowledge, exists yet for porous microstructure, due to the
+extreme property contrast between inclusion and matrix. 
+
+The objective of this paper is to find reliable and practical RVEs for
+porous titanium combining the homogenization convergence concept and
+statistical averages from solving the boundary value problems. As discussed
+above, solutions of finite size domains under mixed BCs approach effective
+properties much faster than UDBC and UTBC. However, since results from
+finite size domains under a single mixed BC approach the effective
+properties from one side, it is difficult to determine the point where the
+finite size domains are large enough. In addition, such a one side bias can
+only be eliminated by increasing the size of analyzed domains. Therefore,
+two mixed BCs simulating a uniaxial loading condition providing opposite
+bias are designed and imposed on the porous models in this paper in order to
+determine the convergence of RVEs and obtain relatively accurate results
+with small RVEs by averaging the results associated with the two BCs. By
+this approach, we trade-off the large RVEs with two mixed BCs and more small
+domains. In other words, the prohibitively large RVE according to the Hill's
+definition are divided into to reasonable small ones associated with special
+BCs. While previous definitions of RVE focused only on macroscopic linear
+properties, our current study also aims at verifying the convergence of both
+the macroscopic and the microscopic elastoplastic responses. The results of
+this paper elucidate a method for numerical prediction of the global and
+local response with small size models for porous materials. 
+
+It should be noted that a porosity of $40\sim 50${\%} is generally
+considered to be an ideal range for orthopaedic applications of porous
+titanium providing reduced stiffness (for reduced stress-shielding) as well
+as sites for bone ingrowth while maintaining mechanical durability
+simultaneously. However, the microstructure at such high porosity is
+extremely complex (see, e.g., Figure~\ref{fig1}(b)), complicating the current RVE
+study. Since we focus on the methodology exploration in the current study,
+low porosity titanium foam is used for the study and the results and
+implications for a 3D model with a higher porosity of 48{\%} are discussed. 
+The RVE for higher porosity titanium foams will be considered in our future
+work. 
+
+In next sections, 2D and 3D FE models with different sizes are created based
+on the simulated microstructure of the experimental material using the
+methodology presented in our previous work \cite{Shenetal}. BCs
+for the FE simulations are described. Then the uniaxial stress-strain
+response is simulated based on the FE models associated with the two mixed
+BCs. Both macroscopic and microscopic responses are demonstrated for the
+convergence study. 
+
+\section{Finite element modeling}\label{sec:2}
+
+\subsection{Simulated microstructure}\label{subsec:2.1}
+
+A simulated microstructure was generated based on the actual microstructure
+of the titanium foam at 14.7{\%} porosity using the methodology presented in
+our previous work \cite{Shenetal}. 3D pore size and location
+distribution information was first derived from 2D sections of a sample at
+14.7{\%} porosity as shown in Figure~\ref{fig1}(a). The location distribution of
+pores is random. The pore size distribution follows Weibull distribution of
+which the density function is denoted by $f(x)$ as follows \cite{Tobias}:
+\begin{equation}
+\label{eq1}
+f(x) = \frac{m}{x}\Bigl(\frac{x}{c}\Bigr)^me^{ - (x / c)^m},
+\end{equation}
+where the parameters, $m$ and $c$, are shape and scale parameter,
+respectively. $m = 2.47$ and $c = 64.68$ were obtained for the pore sections
+observed in 2D sectioning planes providing average diameter of $63.3\,\mu$m;
+$m = 2.29$ and $c = 60.52$ were derived by stereology study providing 3D
+average pore diameter of $53.6\,\mu$m \cite{Shenetal}. A 3D
+simulated microstructure was developed based on this data which retains the
+essential geometry features of the random microstructure. The microstructure
+of the foam at higher porosity was achieved by a geometric simulation of
+pore growth and movement during the foaming process. 
+
+In the simulated 3D multi-pore microstructure (3D-MP-70271) at porosity
+14.7{\%}, 70,271 spherical pores were randomly located in a $(4000\,\mu\textrm{m})^{3}$ cube. 
+No pore impingement was permitted. Sections parallel to the
+$x_{1} x_{2}$ plane passed through the 3D-MP-70271 model were cut every $10\,\mu$m
+ along $x_{3}$ axis to simulate the serial sectioning process which is
+a reliable technique for constructing microstructures \cite{Li1998}. The distribution of pore area fractions in window sizes of $1000\,\mu$m, $2000\,\mu$m, $3000\,\mu$m,
+and $4000\,\mu$m is shown in
+Figure~\ref{fig2}. It can be seen that as the size of the window increases, the range
+and variation of the area fraction decreases and the area fractions converge
+to the overall porosity of the microstructure. 
+
+The simulated microstructure is comprised of two distinct phases, pores and
+titanium matrix. To avoid computational difficulties, it was assumed that
+pores are linear elastic with a very low modulus of $10^{ - 7}$\,GPa and
+Poisson's ratio of 0.3. The titanium matrix having elastic modulus of 110
+GPa, Poisson's ratio of 0.33, and yield strength of 275\,MPa is
+representative of CP Ti-40 \cite{ASM}. The matrix yield
+surface follows the Von~Mises yield criterion with isotropic hardening. All
+material properties and simulations are for room temperature. 
+
+\subsection{2D and 3D finite element models}\label{subsec:2.2}
+
+2D and 3D finite element models were created by cutting out the fragments of
+the simulated microstructure. To study the convergence of responses of
+various size windows, four groups of 2D sections with sizes (side length)
+from $1000\,\mu$m to $4000\,\mu$m having area fraction
+matching the overall porosity of 14.7{\%} were selected for constructing 2D
+models. The four groups of 2D finite element models with side lengths of
+$1000\,\mu$m, $2000\,\mu$m, $3000\,\mu$m, and $4000\,\mu$m
+have ratios of model length to the average pore size $(L/d)$ of 15.8, 31.6,
+47.4, and 63.2, respectively. Each model group contains eight models and is
+named based on their size. For example, 2D-1000 refers to the model group
+with side length of $1000\,\mu$m. Examples of these 2D model groups
+are shown in Figure~\ref{fig3}. It can be seen that some pores having a centroid near
+an edge were truncated. On average, there are 59 pores and 10,930 elements
+in the 2D-1000 model; 235 pores and 39,010 elements in the 2D-2000 model;
+542 pores and 88,385 elements in the 2D-3000 model; 943 pores and 159,768
+elements in the 2D-4000 model. 
+
+Two 3D model groups with side lengths of $170\,\mu$m and $340\,\mu$m
+having porosity of 14.7{\%} were selected from different locations of the
+3D-MP-70271 microstructure. Each group contains four 3D models. The ratios
+of model size to the average pore size $(L/d)$ are 3.17 and 6.34,
+respectively. Models were named 3D-170 and 3D-340 after the model size. 
+Examples of the 3D-170 and 3D-340 models are shown in Figure~\ref{fig4}. Some pores
+having a centroid near a face were truncated. On average, the 3D-170 model
+contain 12 pores and 15,439 elements; the 3D-340 model 64 pores and 125,536
+elements. One 3D model with higher porosity of 48{\%} in a $340\,\mu$m cube
+was created by cutting a block of further foamed microstructure. As shown in
+Figure~\ref{fig5}, pores are connected to form large pores which have a complex,
+tortuous shape. The model contains 130,552 elements. 
+
+All 2D models were meshed with eight-node biquadratic plane strain elements
+and all 3D models were meshed with ten-node modified tetrahedral elements
+with hourglass control to prevent volumetric lock during plastic deformation
+\cite{Hibbitt}. All finite element analyses were
+performed using ABAQUS software. Mesh convergence was verified based on
+overall and local stress values. The overall strain and stress are
+calculated by using volume averages,
+\begin{align}
+\label{eq2}
+\bar {\varepsilon }_{ij} &= \frac{1}{V}\int_V {\varepsilon _{ij} } dV
+= \frac{1}{\sum_{m = 1}^N {V^{(m)}} }\sum_{m = 1}^N
+{\varepsilon _{ij}^{( m )} V^{( m )}}
+\\
+\label{eq3}
+\bar {\sigma }_{ij} &= \frac{1}{V}\int_V {\sigma _{ij} } dV =
+\frac{1}{\sum_{m = 1}^N {V^{(m)}} }\sum_{m = 1}^N {\sigma
+_{ij}^{( m )} } V^{( m )}
+\end{align}
+and the standard deviation of the microscopic stress distribution is
+weighted by the volume of the element:
+\begin{equation}
+\label{eq4}
+SD = \sqrt {\frac{\sum_{m = 1}^N {V^{(m)}(\sigma _{ij}^{(m)} -
+\overline \sigma _{ij} } )^2}{\sum_{m = 1}^N {V^{(m)}} }},
+\end{equation}
+where $V^{(m)}$ is the volume of element $m$, $N$ is the total number of elements,
+$\sigma _{ij} $ is the Cauchy stress tensor, and the total strain tensor is
+decomposed into elastic and plastic components. It should be noted that the
+stress and strain tensors, $\sigma _{ij} $ and $\varepsilon _{ij} $, are
+obtained at the centroid of each element. 
+
+
+\subsection{Boundary conditions}\label{subsec:2.3}
+
+The experimental procedure to obtain a macroscopic stress-strain response
+for porous materials is typically a uniaxial compression test, which has
+been performed for porous titanium \cite{Davis, Shenetal}. Our numerical study thus focuses on the study of the
+responses of the titanium foam under uniaxial proportional compressive
+loading. As discussed in section~\ref{sec:1}, it is possible to obtain accurate
+estimates of the material properties with relative small RVEs under mixed
+BCs \cite{HazanovandHuet}. Two types of mixed BCs were designed in the
+numerical simulation as described in Table~\ref{tab1} in which $x_{2}$ direction is
+the loading direction. For boundary condition 1 (BC1), uniform displacements
+are imposed on the faces perpendicular to loading direction without
+friction; other faces parallel to loading direction are traction free. This
+boundary condition is used to simulate the experimental setup in the
+mechanical test. For boundary condition 2 (BC2), the same conditions are
+given for the faces perpendicular to loading direction; however the faces
+parallel to loading direction remain straight and parallel during
+deformation to simulate an interior domain to be compatible with the
+surrounding material. Therefore, BC2 is periodic mechanically, but not
+microstructurally as the pores on opposing edges are not continuous. The
+boundaries for 2D models are the same as those applied to the left, right,
+top, and bottom faces of the 3D models to impose uniaxial compressive
+loading. Note that 2D models are restricted to uniaxial and biaxial load
+cases. 
+
+
+\section{Results and discussion}\label{sec:3}
+
+\subsection{Macroscopic response}\label{subsec:3.1}
+
+The uniaxial stress-strain responses predicted by the sixteen individual 2D
+simulations (eight models deformed along $x_{1}$ and $x_{2}$ directions) of
+the 2D-1000, 2D-2000, 2D-3000, and 2D-4000 models under the two mixed BCs
+are shown in Figure~\ref{fig6}. These collected results reveal that as 2D window size
+increases from $1000\,\mu$m to $4000\,\mu$m, the dispersion of the predicted
+stress-strain curves for each BC decreases. The range of the two groups of
+stress-strain curves associated with BC1 and BC2 also become smaller. The
+average responses of the sixteen individual 2D simulations under the two BCs
+converge to a common value as the window size increases as shown in Figure~\ref{fig7}. 
+The convergence trend of the two BCs suggests BC1 is slightly
+underrestrictive which is similar to UTBC, and BC2 is slightly
+overrestrictive which is similar to UDBC. The asymptotic relationship of the
+average elastic modulus and overall stress at 1{\%} strain corresponding to
+the length scale of the window can be seen in Figure~\ref{fig8}. The further overall
+averages of the total thirty-two responses (eight models deformed along
+$x_{1}$ and $x_{2}$ directions under BC1 and BC2 ) for each model group are
+shown in Figure~\ref{fig9} and the curves are nearly indistinguishable. 
+
+These observations in the figures are confirmed in Table~\ref{tab2} which shows the
+2D model predictions for elastic modulus and overall stress at 1{\%}
+uniaxial strain. The table shows that under BC1 and BC2 the standard
+deviation of elastic modulus decreases from 2.34{\%} and 2.12{\%} for the
+2D-1000 models to 0.45{\%} and 0.44{\%} for the 2D-4000 models and for the
+overall stress from 3.69{\%} and 3.0{\%} to 1.55{\%} and 1.44{\%},
+respectively. For all the responses for the two BCs (thirty-two responses),
+the standard deviation decreases from 2.29{\%} to 0.48{\%} for modulus and
+4.23{\%} to 1.7{\%} for overall stress. As the scatter of the data
+decreases, the overall averages (BC1{\_}2avgs) of each model group under the
+two BCs remain almost constant. For example, only 0.71{\%} difference exists
+between the averages of the overall stresses of the 2D-1000 and 2D-4000
+models. 
+
+Based on the observations above, we believe that the averages over the
+individual simulations under the two BCs should be close to the ``exact''
+solution. This hypothesis originates from the homogenization convergence
+concept that the estimates under different BCs converge to the effective
+response as the calculated domain approach to a Hill's RVE for any locally
+heterogeneous but globally homogeneous microstructures
+\cite{HazanovandHuet,  Hollister, Huet, Jiang2001a, Ostoja-Starzewski, Pecullan, Sab, Terada}. 
+Therefore, we conclude that a
+number of small models can obtain convergent results equivalent to larger
+models. At the same time, since the averaged stress-strain curves associated
+with BC1 and BC2 approach the ``exact'' solution which lies in between, the
+error of the predicted result of each BC to the effective one can be
+estimated. For example, since 1.7{\%} difference exists between the average
+stresses at 1{\%} strain for the 2D-4000 models under the two BCs as shown
+in Figure~\ref{fig8}, the error of the result from each BC to the ``exact'' solution
+should be less than 1.7{\%}, and the error of the average of BC1 and BC2
+(BC1{\_}2avg in Table~\ref{tab2}) less than 0.85{\%}. This method suggests that by
+selecting a certain number of models associated with two selected slightly
+underrestrictive and overrestrictive boundary conditions providing opposite
+bias of the result, the convergent results and degree of accuracy can be
+estimated. 
+
+The fast homogenization achieved here can be credited to the fact that all
+the selected models have fixed porosity and are subjected to the two mixed
+BCs. These conditions are in contrast to the work of \cite{Kanit}. In their
+work on the determination of the RVE
+size, small models have large variance of volume fractions which leads to
+large variance of the prediction results. They showed that bias exists for
+the average of the predictions of a number of small domains associated with
+one periodic BC and the bias decreases to zero as the size of analyzed
+domains reach a certain level. This one sided approach can be eliminated
+only by increasing domain size. 
+
+The study can also be generalized to 3D FE analysis. The uniaxial
+stress-strain responses predicted by the twelve individual 3D simulations
+(four models deformed along the three perpendicular directions) of the
+3D-170 and 3D-340 models under the two mixed BCs are shown in Figure~\ref{fig10}. 
+Similar to the 2D simulations, the scatter of the curves decreases as the
+size of the 3D models increases. The average stress-strain curves over the
+individual simulations associated with BC1 and BC2 for 3D-340 models are
+closer than 3D-170 models as shown in Figure~\ref{fig11}. The overall averages of the
+stress-strain responses for each model group of both the BCs (BC1{\_}2avg)
+are plotted in Figure~\ref{fig12} and the two curves almost superpose. The results
+for elastic modulus and overall average stress at 1{\%} uniaxial strain for
+the 3D models are shown in Table~\ref{tab3}. For all the response for the two BCs,
+i.e., twenty-four responses, the standard deviation for modulus decreases
+from 3.05{\%} for 3D-170 models to 0.97{\%} for 3D-340 models, and 5.95{\%}
+to 2.47{\%} for overall average stress. The two mixed BCs offer biased
+predictions as in the 2D models. Therefore, the discussions and conclusions
+based on the 2D FE analyses above still hold true for the 3D FE study. A
+detailed comparison between 2D and 3D FE simulations was conducted in our
+companion work \cite{ShenandBrinson}. It was found that the
+macroscopic responses predicted by the 3D models are in reasonable agreement
+with the experimental and theoretical results. The macroscopic plastic
+responses predicted by 2D models are lower than the 3D predictions while the
+elastic responses are close. 2D models overpredict the probability of high
+Von~Mises stress and equivalent plastic strain and therefore overestimate
+the failure probability for porous materials. 
+
+It should be noted that the current BCs for the model groups are only
+appropriate for the simulation of titanium foam at low porosities (less than
+25{\%}) under uniaxial loading conditions. However, this methodology
+elucidates a method to find relatively small RVEs for heterogeneous
+materials, especially for the difficult case of high contrast properties
+between the phases. As the material is foamed to high porosity, pores are
+connected to form larger pores complicating the microstructure as shown in
+Figure~\ref{fig5}. The uniaxial stress-strain responses predicted by the 3D model
+with higher porosity of 48{\%} (the 3D model deformed along $x_{1,
+}x_{2}$ and $x_{3}$ directions) under the two mixed BCs are shown in Figure~\ref{fig13}. 
+The results indicate a much larger scatter than the 3D-340 models which
+have the same model size but lower porosity. The convergent response
+prediction for titanium foam at high porosity is therefore quite challenging
+and will be the focus of our future work. It can be expected that more
+analyzed domains are needed to obtain convergent result while using the
+boundary conditions providing biased error. 
+
+
+\subsection{Microscopic response}\label{subsec:3.2}
+
+The microscopic field variable distributions are very important for failure
+analysis because failure is a local event rather than a volume averaged
+event. The Von~Mises stress distributions in the matrices of all the 2D
+models deformed along $x_{1}$ and $x_{2}$ directions under 1{\%} macroscopic
+strain are plotted in Figure~\ref{fig14}. Since BC1 is less restrictive than BC2, the
+distributions of Von~Mises stress under BC1 are broader than those under
+BC2. Similar to the observation regarding the macroscopic responses, as the
+model size increases, the curves become less dispersed. Both the mean value
+and standard deviation of the Von~Mises stress distribution converge with
+increasing model size. For example, the maximum difference of the mean
+values of Von~Mises stress under BC2 is 8.5{\%} for 2D-1000 models and
+4.2{\%} for 2D-4000 models. The average distribution curves of the sixteen
+individual simulations of 2D-1000, 2D-2000, 2D-3000, and 2D-4000 models
+associated with the two mixed BCs converge to a common mean value and a
+common standard deviation as shown in Figure~\ref{fig15}. The difference between the
+averaged mean values under BC1 and BC2 for 2D-1000 models is 5.9{\%} and for
+2D-4000 models is 1.8{\%}. This common mean value and common standard
+deviation of the Von~Mises stress distribution can be clearly seen in Figure~\ref{fig16}
+in which the further overall averages of the total thirty-two
+distribution curves of all the 2D models are plotted. Although not shown
+here, the equivalent plastic strain distribution follows the similar
+convergence trend. 
+
+To obtain a clear view of the influence of the BCs on the microscopic
+distributions for models with different sizes, the equivalent plastic strain
+distributions predicted by one of the 2D-1000 and 2D-4000 models under 1{\%}
+far field strain are plotted in Figure~\ref{fig17}. In the 2D-1000 model, the plastic
+strain distributions are influenced by BCs such that differences exist even
+in the middle of the analyzed domain. In the 2D-4000 models, differences in
+the plastic strain distributions away from the boundaries become negligible. 
+However, the deficiency of the individual small 2D models can be compensated
+by averaging results of more models associated with the two BCs. 
+
+The accumulated frequencies of the Von~Mises stress of the 2D models are
+plotted in Figure~\ref{fig18}. These values were obtained by calculating the
+percentage of all the matrix elements exceeding a certain value in each
+model group. As is evident in Figure~\ref{fig18}, the results of the Von~Mises stress
+distribution of the 2D models under BC1 and BC2 also converge in the same
+manner as the macroscopic stress-strain responses. With this frequency
+averaged over all the 2D simulations under the two BCs, relatively accurate
+results can be obtained by the 2D-1000 model which is very close to the
+prediction of 2D-4000 models as shown in Figure~\ref{fig19}. Therefore the
+convergence discussion on the macroscopic responses should be still valid
+for the microscopic variable statistic distributions. 
+
+To generalize the microscopic study to 3D FE analysis, the corresponding
+results of Von~Mises stress predicted by the twelve individual 3D
+simulations (four models deformed along the three perpendicular directions)
+of the 3D-170 and 3D-340 models under the two mixed BCs are shown in Figure~\ref{fig20}. 
+Similar convergence trend can be observed as the size of the 3D models
+increases. The average responses over the individual simulations associated
+with the two BCs are shown in Figure~\ref{fig21}. The difference between the mean
+Von~Mises stress at 1{\%} strain for the 3D-170 models under BC 1 and BC 2 is
+8.5{\%} and for 3D-340 models 3.6{\%}. The overall averages of the total
+responses for each 3D model group are shown in Figure~\ref{fig22}. Although the
+curves are not as close as 2D models, the convergence trend is similar to
+the 2D study. The accumulated frequencies of the Von~Mises stress of the 3D
+models are plotted in Figure~\ref{fig23}. The frequency averaged over all the 3D
+simulation under the two BCs is shown in Figure~\ref{fig24}. Similar convergence
+trend can also been observed. It can be expected that if the 3D models
+increase to $640\,\mu$m, the individual stress and strain curves would
+become more convergent. However, due to the computational limitation, it is
+not practical to analyze the model with $640\,\mu$m side length. Since the
+two BCs are bounds for the properties, the ``exact'' effective response
+should lie in between. In other words, since the difference between the mean
+Von~Mises stress at 1{\%} strain for the 3D-340 models under BC1 and BC2 is
+3.6{\%}, the average should be within 3.6{\%} of the ``exact'' solution. 
+
+It can be found that for microscopic response, the 3D models predict higher
+mean Von~Mises stress than 2D models but relatively uniform distributions
+with smaller standard deviation. For example, the distribution of the Von~Mises
+stress is $357.7\pm 46.7$\,MPa for 3D-340 models and $298\pm 95.5$\,MPa
+for 2D-4000 models. An extensive comparison between the stress and strain
+distribution has been studied in our companion work \cite{ShenandBrinson}. 
+
+
+\section{Conclusions}\label{sec:4}
+
+An approach to determine RVEs of porous titanium has been presented in this
+paper. The method adopts the RVE concept of Kanit et al.\ according to which
+the RVEs can be small domains as long as the average of the small domains
+provides an unbiased result \cite{Kanit}. Since the estimates
+associated uniform traction and displacement BCs provide the lower and
+higher bounds for the effective properties providing the largest bias, two
+mixed boundaries conditions are therefore designed to obtain results with a
+smaller bias. Four groups of 2D models and two groups of 3D models with
+various sizes and fixed porosity have been constructed based on a simulated
+microstructure of an experimental material. As the length scale of the model
+increase, the individual responses of models become less dispersed. At the
+same time, the averages of the estimates associated with the two mixed BCs
+show opposite bias and converge to a common value. The error can be
+estimated and the relatively convergent result can be obtained from small
+models by averaging the responses associated with the two mixed BCs. This
+method developed here can be used to simulate microstructures of real
+materials. Although only a special case for titanium foam at low porosity
+under uniaxial loading has been studied, this method elucidates a way to
+study other heterogeneous materials and higher volume fraction of
+pores/inclusions. By choosing appropriate boundary conditions providing
+biased error, convergent result can be achieved by averaging the results of
+a number of small analyzed domains while the number of the domains is
+dependent upon the nature of the microstructure, the designed boundary, and
+the domain size. 
+
+\section*{Acknowledgements}
+
+The authors acknowledge the financial support of the National Science
+Foundation through grant number DMR-0108342 and thank Professor Dunand's
+group for providing titanium foam and images. 
+
+
+
+
+\bibliographystyle{plain}
+\bibliography{main}
+
+
+
+\newpage
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-1a}}
+\centerline{\includegraphics{..//main/fig-1b}}
+\caption{Optical micrograph of metallographic cross-section for titanium foam with
+(a)~14.7\% and (b)~50\% porosity}
+\label{fig1}
+\end{figure}
+
+\newpage
+\
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-2a.eps}}
+\centerline{\includegraphics{..//main/fig-2b.eps}}
+\end{figure}
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-2c.eps}}
+\caption{(a)~The cubic domain of the 3D-MP-70271 model with side length of $4000\,\mu$m and a series of
+window sizes of $1000\,\mu$m, $2000\,\mu$m, $3000\,\mu$m, and $4000\,\mu$m,
+(b)~Pore area fraction as a function of  $x_3$ position for the series of windows,
+(c)~Distributions of pore area fraction of each window series}
+\label{fig2}
+\end{figure}
+
+
+\newpage
+\
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-3}}
+\caption{Geometry of (a) 2D-1000, (b) 2D-2000, (c) 2D-3000, and (d) 2D-4000 model}
+\label{fig3}
+\end{figure}
+
+\newpage
+\
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-4a}}
+\centerline{\includegraphics{..//main/fig-4b}}
+\caption{Geometry of (a) 3D-170 and (b) 3D-340 model}
+\label{fig4}
+\end{figure}
+
+
+
+
+
+
+
+
+\newpage
+\
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-5}}
+\caption{Geometry of the 3D model with porosity of 48\% in a $340\,\mu$m cube}
+\label{fig5}
+\end{figure}
+
+
+\newpage
+\
+
+\centerline{\includegraphics{..//main/fig-6a}}
+
+\newpage
+\
+
+\centerline{\includegraphics{..//main/fig-6b}}
+
+\newpage
+\
+
+\centerline{\includegraphics{..//main/fig-6c}}
+
+\newpage
+\
+
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-6d}}
+\caption{Macroscopic stress-strain responses predicted by the sixteen individual simulations of
+(a)~2D-1000, (b)~2D-2000, (c)~2D-3000, and (d)~2D-4000 models associated with the two mixed
+boundary conditions}
+\label{fig6}
+\end{figure}
+
+\newpage
+\
+
+
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-7}}
+\caption{Macroscopic stress-strain responses averaged over the sixteen individual simulations of
+2D-1000, 2D-2000, 2D-3000, and 2D-4000 models associated with the two mixed boundary conditions}
+\label{fig7}
+\end{figure}
+
+
+\newpage
+\
+
+
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-8a}}
+\centerline{\includegraphics{..//main/fig-8b}}
+\caption{(a)~Apparent modulus and (b)~overall average stress at 1\% far-field strain associated
+with the two mixed boundary conditions as a function of the ratio of the window size to pore diameter}
+\label{fig8}
+\end{figure}
+
+
+\newpage
+\
+
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-9}}
+\caption{Macroscopic stress-strain responses averaged over the thirty-two individual simulations
+of 2D-1000, 2D-2000, 2D-3000, and 2D-4000 models}
+\label{fig9}
+\end{figure}
+
+\newpage
+\
+
+\centerline{\includegraphics{..//main/fig-10a}}
+\newpage
+\
+
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-10b}}
+\caption{Macroscopic stress-strain responses predicted by the twelve individual simulations of
+(a)~3D-170 and (b)~3D-340 models associated with the two mixed boundary conditions}
+\label{fig10}
+\end{figure}
+
+\newpage
+\
+
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-11}}
+\caption{Macroscopic stress-strain responses averaged over the twelve individual simulations of 3D-170
+and 3D-340 models associated with the two mixed boundary conditions}
+\label{fig11}
+\end{figure}
+
+
+\newpage
+\
+
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-12}}
+\caption{Macroscopic stress-strain responses averaged over the twenty-four individual simulations of
+3D-170 and 3D-340 models}
+\label{fig12}
+\end{figure}
+
+
+\newpage
+\
+
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-13}}
+\caption{Macroscopic stress-strain responses predicted by the 3D model of 48\% porosity
+associated with the two mixed boundary conditions}
+\label{fig13}
+\end{figure}
+
+\newpage
+\
+
+
+\centerline{\includegraphics{..//main/fig-14a}}
+
+\newpage
+\
+
+\centerline{\includegraphics{..//main/fig-14b}}
+
+\newpage
+\
+
+\centerline{\includegraphics{..//main/fig-14c}}
+
+\newpage
+\
+
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-14d}}
+\caption{Von Mises stress distributions predicted by the sixteen individual simulations of
+(a)~2D-1000, (b)~2D-2000, (c)~2D-3000, and (d)~2D-4000 models associated with the two mixed
+boundary conditions}
+\label{fig14}
+\end{figure}
+
+\newpage
+\
+
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-15}}
+\caption{Von Mises stress distributions averaged over the sixteen individual simulations
+of 2D-1000, 2D-2000, 2D-3000, and 2D-4000 models associated with the two mixed boundary conditions}
+\label{fig15}
+\end{figure}
+
+\newpage
+\
+
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-16}}
+\caption{Von Mises stress distributions averaged over the thirty-two individual simulations
+of 2D-1000, 2D-2000, 2D-3000, and 2D-4000 models}
+\label{fig16}
+\end{figure}
+
+
+
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-17}}
+\caption{Equivalent plastic strain distribution predicted by
+(a)~one of 2D-1000 model under BC1, (b)~the 2D-1000 model under BC2, (c)~one of 2D-4000 model
+under BC1, and (d)~the 2D-4000 model under BC2}
+\label{fig17}
+\end{figure}
+
+\newpage
+\
+
+
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-18}}
+\caption{Accumulative frequency of Von Mises stress exceeding a certain value predicted by
+2D-1000, 2D-2000, 2D-3000, and 2D-4000 models associated with the two mixed boundary conditions}
+\label{fig18}
+\end{figure}
+
+\newpage
+\
+
+
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-19}}
+\caption{Accumulative frequency of Von Mises stress exceeding a certain value,
+averaged over the two mixed boundary conditions predicted by 2D-1000, 2D-2000,
+2D-3000, and 2D-4000 models}
+\label{fig19}
+\end{figure}
+
+\newpage
+\
+
+
+\centerline{\includegraphics{..//main/fig-20a}}
+
+\newpage
+\
+
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-20b}}
+\caption{Von Mises stress distribution predicted by the twelve individual simulations of
+(a)~3D-170 and (d)~3D-340 models associated with the two mixed boundary conditions}
+\label{fig20}
+\end{figure}
+
+\newpage
+\
+
+
+
+
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-21}}
+\caption{Von Mises stress distributions averaged over the twelve individual simulations of 3D-170
+and 3D-340 models associated with the two mixed boundary conditions}
+\label{fig21}
+\end{figure}
+
+
+\newpage
+\
+
+
+
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-22}}
+\caption{Von Mises stress distributions averaged over the twenty-four individual
+simulations of 3D-170 and 3D-340 models}
+\label{fig22}
+\end{figure}
+
+\newpage
+\
+
+
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-23}}
+\caption{Accumulative frequency of Von Mises stress exceeding a certain value predicted
+by 3D-170 and 3D-340 models associated with the two mixed boundary conditions}
+\label{fig23}
+\end{figure}
+
+\newpage
+\
+
+
+
+\begin{figure}
+\centerline{\includegraphics{..//main/fig-24}}
+\caption{Accumulative frequency of Von Mises stress exceeding a certain value, averaged over
+the two mixed boundary conditions predicted by 3D-170 and 3D-340 models}
+\label{fig24}
+\end{figure}
+
+
+\newpage
+\
+
+
+\centerline{\includegraphics{last}}
+
+
+
+
+
+\begin{table}
+\begin{tabular}
+{|p{80pt}|p{125pt}|p{125pt}|}
+\hline
+\textbf{Model Face}&
+\textbf{Boundary Condition 1}&
+\textbf{Boundary Condition 2} \\
+\hline
+Top ($x_2 = a$)&
+$u_{2} = -0.01a$;\quad $t_{1}=t_{3} = 0$&
+$u_{2} = -0.01a$;\quad $t_{1}=t_{3} = 0$ \\
+\hline
+Bottom ($x_2 = 0)$&
+$u_{2} = 0$;\quad $t_{1}=t_{3} = 0$&
+$u_{2} = 0$;\quad $t_{1}=t_{3} = 0$ \\
+\hline
+Left ($x_1 = 0$)&
+$t_{1}=t_{2}=t_{3} = 0$&
+$u_{1} = -\bar {u_1 }$;\quad $t_{2}=t_{3} = 0$ \\
+\hline
+Right ($x_1 = a$)&
+$t_{1}=t_{2}=t_{3} = 0$&
+$u_{1}=\bar{u_1 } $;\quad $t_{2}=t_{3} = 0$ \\
+\hline
+Front ($x_3 = a$)&
+$t_{1}=t_{2}=t_{3} = 0$&
+$u_{3}=\bar{u}_3 $;\quad $t_{1}=t_{2} = 0$ \\
+\hline
+Back ($x_3 = 0$)&
+$t_{1}=t_{2}=t_{3} = 0$&
+$u_{3} = -\bar{u}_3  $;\quad $t_{1}=t_{2} = 0$ \\
+\hline
+\end{tabular}
+\vspace{6pt}
+\caption{Boundary conditions ($\bar{u}_1  $ and $\bar{u}_3$ are displacements of the four
+side faces upon loading on the top)}
+\label{tab1}
+\end{table}
+
+
+
+\begin{table}
+\begin{tabular}
+{|p{37pt}|p{42pt}|p{40pt}|p{31pt}|p{51pt}|p{35pt}|}
+\hline
+\multicolumn{2}{|p{79pt}|}{\raisebox{-1.50ex}[0cm][0cm]{}}&
+\multicolumn{2}{|p{83pt}|}{$E$\,(GPa)} &
+\multicolumn{2}{|p{87pt}|}{$\sigma $\,(MPa)}  \\
+\cline{3-6}
+\multicolumn{2}{|p{139pt}|}{} &
+AVG.&
+SD{\%}&
+AVG.&
+SD{\%} \\
+\hline
+\raisebox{-3.00ex}[0cm][0cm]{2D-1000}&
+BC1&
+78.06&
+2.34&
+241.37&
+3.69 \\
+\cline{2-6}
+ &
+BC2&
+79.08&
+2.12&
+254.30&
+3.00 \\
+\cline{2-6}
+ &
+\textbf{\textit{BC1{\_}2avg}}&
+\textbf{\textit{78.57}}&
+\textbf{\textit{2.29}}&
+\textbf{\textit{247.84}}&
+\textbf{\textit{4.23}} \\
+\hline
+\raisebox{-3.00ex}[0cm][0cm]{2D-2000}&
+BC1&
+77.19&
+0.97&
+242.59&
+2.61 \\
+\cline{2-6}
+ &
+BC2&
+77.92&
+0.91&
+250.1&
+2.10 \\
+\cline{2-6}
+ &
+\textbf{\textit{BC1{\_}2avg}}&
+\textbf{\textit{77.56}}&
+\textbf{\textit{1.04}}&
+\textbf{\textit{246.27}}&
+\textbf{\textit{2.79}} \\
+\hline
+\raisebox{-3.00ex}[0cm][0cm]{2D-3000}&
+BC1&
+77.67&
+0.54&
+243.72&
+1.92 \\
+\cline{2-6}
+ &
+BC2&
+78.03&
+0.51&
+249.45&
+1.29 \\
+\cline{2-6}
+ &
+\textbf{\textit{BC1{\_}2avg}}&
+\textbf{\textit{77.85}}&
+\textbf{\textit{0.57}}&
+\textbf{\textit{246.59}}&
+\textbf{\textit{1.99}} \\
+\hline
+\raisebox{-3.00ex}[0cm][0cm]{2D-4000}&
+BC1&
+77.69&
+0.45&
+244.04&
+1.55 \\
+\cline{2-6}
+ &
+BC2&
+78&
+0.44&
+248.15&
+1.44 \\
+\cline{2-6}
+ &
+\textbf{\textit{BC1{\_}2avg}}&
+\textbf{\textit{77.85}}&
+\textbf{\textit{0.48}}&
+\textbf{\textit{246.09}}&
+\textbf{\textit{1.7}} \\
+\hline
+\end{tabular}
+\vspace{6pt}
+\caption{2D model predictions for elastic modulus and overall stress in loading direction at 1{\%} uniaxial strain}
+\label{tab2}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+\begin{table}
+\begin{tabular}
+{|p{37pt}|p{32pt}|p{45pt}|p{41pt}|p{51pt}|p{35pt}|}
+\hline
+\multicolumn{2}{|p{79pt}|}{\raisebox{-1.50ex}[0cm][0cm]{}}&
+\multicolumn{2}{|p{77pt}|}{$E$\,(GPa)} &
+\multicolumn{2}{|p{77pt}|}{$\sigma $\,(MPa)}  \\
+\cline{3-6}
+\multicolumn{2}{|p{129pt}|}{} &
+AVG.&
+SD{\%}&
+AVG.&
+SD{\%} \\
+\hline
+\raisebox{-3.00ex}[0cm][0cm]{3D-170}&
+BC1&
+80.36&
+3.26&
+266.73&
+5.93 \\
+\cline{2-6}
+ &
+BC2&
+81.93&
+2.62&
+287.91&
+2.97 \\
+\cline{2-6}
+ &
+\textbf{\textit{BC1{\_}2avg}}&
+\textbf{\textit{81.15}}&
+\textbf{\textit{3.05}}&
+\textbf{\textit{277.32}}&
+\textbf{\textit{5.95}} \\
+\hline
+\raisebox{-3.00ex}[0cm][0cm]{3D-340}&
+BC1&
+80.61&
+0.91&
+275.63&
+1.89 \\
+\cline{2-6}
+ &
+BC2&
+81.42&
+0.78&
+286.66&
+0.96 \\
+\cline{2-6}
+ &
+\textbf{\textit{BC1{\_}2avg}}&
+\textbf{\textit{81.01}}&
+\textbf{\textit{0.97}}&
+\textbf{\textit{281.14}}&
+\textbf{\textit{2.47}} \\
+\hline
+\end{tabular}
+\vspace{6pt}
+\caption{3D model predictions for elastic modulus and overall stress in loading direction at 1{\%} uniaxial strain}
+\label{tab3}
+\end{table}
+
+
+
+
+
+
+
